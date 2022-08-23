@@ -1,7 +1,7 @@
 
 import './App.css';
 import React, {useState} from 'react';
-import InputFields from './Components/InputFields'
+import InputField from './Components/InputField'
 
 
 
@@ -56,7 +56,7 @@ function App() {
       <form className='form' onSubmit={handleSubmit}>
       <h1>REACT VALIDATION FORM</h1>
           
-       <InputFields 
+       <InputField
           ref={inputRefs.current[0]}
           name='username'
           label='Username'
@@ -64,14 +64,14 @@ function App() {
           validation={"required|min:6|max:12"}
        />
 
-        <InputFields 
+        <InputField
           ref={inputRefs.current[1]}
           name='password'
           label='Password'
           onChange={handleChange}
           validation="required|min:6"
        />
-          <button type='button'>Login</button>
+          <button type='submit' className='button'>Login</button>
 
       <footer className='footer'>
         <p>&copy; Cletus_Ogah @2022</p>

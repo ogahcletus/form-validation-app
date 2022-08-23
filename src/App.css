@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #292929;
+  
 }
 
 .App {
@@ -37,6 +37,7 @@
   text-align: center;
   width: 100%;
   margin-bottom: 20px;
+  color: white;
 
 }
 
@@ -49,8 +50,10 @@
 
 .input-wrapper label {
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: light;
   width: 100%;
+  color: white;
+  
 }
 
 .input-wrapper input {
@@ -68,15 +71,15 @@
 button {
   margin-top: 20px;
   width: 130px;
-  background-color: transparent;
+  background-color: darkblue;
   outline: none;
-  color: black;
+  color: white;
   font-weight: bold;
   border-radius: 10px;
   padding: 10px;
   transition: ease all 250ms;
-  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.1),
-  -7px -7px 20px rgb(241, 255, 255);
+  /*box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.1),
+  -7px -7px 20px rgb(241, 255, 255); */
   font-family: Impact, sans-serif;
   font-size: 25px;
   border: unset;
@@ -84,20 +87,24 @@ button {
 
 button:hover {
   cursor: pointer;
-  color: #292929;
+  color: rgb(97, 234, 97);
   box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1),
   inset -3px -3px 5px rgba(35, 194, 11, 0.803);
-}
+} 
 
 .error {
   margin-top: 10px;
   font-weight: light;
   font-style: italic;
   color: #b60000;
+  font-family: sans-serif;
 }
 
 .footer {
   margin-top: 30px;
   font-display: flex;  
+  color: white;
+  font-weight: lighter;
+  font-family: sans-serif;
 
 }
